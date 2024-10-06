@@ -1,0 +1,145 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+.homepage {
+  margin-top: 65%;
+}
+/* Hero Section */
+.hero {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+}
+
+/* Quick Links Section */
+.quick-links {
+  padding: 2rem;
+  background-color: white;
+  text-align: center;
+}
+
+.quick-links h2 {
+  color: black;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.link-item {
+  width: 30%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.link-item img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.cta-button2 {
+  width: 10vw;
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button1 {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* News Section */
+.news {
+  color: black;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.news-item img {
+  width: 30%;
+
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .homepage {
+    margin-top: 370%;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .links {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .link-item {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  .news-item img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  height: 100vh; /* Ensure the body takes the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+label {
+  
+  margin: 0;
+  padding: 0.5em 0;
+  color: #333;
+}
+
+p,
+input,
+textarea,
+button {
+  font-size: 1em;
+}
+
+/* Submission Form Section */
+.submission-form {
+  
+  width: 100%; 
+  margin-top: 220px;
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.submission-form h1 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1.5em;
+}
+
+.submission-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #555;
+}
+
+.submission-form input,
+.submission-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.submission-form textarea {
+  resize: vertical;
+}
+
+.submission-form input[type="file"] {
+  padding: 0.5em;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Confirmation Message */
+.confirmation {
+  text-align: center;
+}
+
+.confirmation h2 {
+  color: #28a745;
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.confirmation p {
+  color: #333;
+  font-size: 1.1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .submission-form {
+    padding: 1.5em;
+  }
+
+  .submission-form h1 {
+    font-size: 1.8rem;
+  }
+
+  .submission-form input,
+  .submission-form textarea {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.75em 1em;
+  }
+}

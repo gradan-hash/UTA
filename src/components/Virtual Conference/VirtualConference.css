@@ -1,0 +1,200 @@
+/* Virtual Conference Section */
+.virtual-conference-section {
+  max-width: 900px;
+  margin: 90% auto 2em auto; /* Reduced margin for better visibility */
+  padding: 2em;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1.5em;
+}
+
+.virtual-conference-title {
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.virtual-conference-description {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 2em;
+}
+
+/* Live Stream Section */
+.live-stream {
+  margin-bottom: 2.5em;
+}
+
+.live-stream-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.virtual-conference-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+.virtual-conference-button:hover {
+  background-color: #0056b3;
+}
+
+/* Q&A Section */
+.qa-section {
+  margin-bottom: 2.5em;
+  text-align: left;
+}
+
+.qa-title {
+  font-size: 2em;
+  color: #333;
+}
+
+.qa-form {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.qa-input {
+  flex: 1;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.qa-submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qa-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.qa-list {
+  padding: 1em;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.qa-question {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+/* Chat Section */
+.chat-section {
+  margin-bottom: 2.5em;
+  text-align: left;
+}
+
+.chat-title {
+  font-size: 2em;
+  color: #333;
+}
+
+.chat-form {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-messages {
+  padding: 1em;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  margin-bottom: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .virtual-conference-title {
+    margin-top: 160%;
+    font-size: 2rem;
+  }
+
+  .virtual-conference-description {
+    font-size: 1rem;
+  }
+
+  .live-stream-title,
+  .qa-title,
+  .chat-title {
+    font-size: 1.8rem;
+  }
+
+  .qa-input,
+  .chat-input {
+    padding: 0.5em;
+  }
+
+  .qa-submit-button,
+  .chat-submit-button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  .virtual-conference-button {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+  }
+
+  .chat-message,
+  .qa-question {
+    font-size: 0.9em;
+  }
+
+  .virtual-conference-section {
+    margin-top: 5%; /* Reduced margin for smaller screens */
+    padding: 1.5em;
+  }
+}

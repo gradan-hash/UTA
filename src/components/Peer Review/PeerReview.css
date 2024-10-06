@@ -1,0 +1,139 @@
+/* Peer Review Page Styles */
+.peer-review-section {
+  padding: 2em;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.peer-review-title {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.peer-review-intro {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.peer-review-subtitle {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Reviewer Assignment Section */
+.reviewer-assignment {
+  margin-bottom: 2rem;
+}
+
+.peer-review-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.peer-review-item {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.assign-button {
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assign-button:hover {
+  background-color: #0056b3;
+}
+
+/* Review Submission Form */
+.review-form-section {
+  margin-top: 2rem;
+}
+
+.peer-review-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.peer-review-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+  color: #555;
+}
+
+.peer-review-form input,
+.peer-review-form textarea {
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1em;
+}
+
+.peer-review-form textarea {
+  resize: vertical;
+}
+
+.review-submit-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.review-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Review Confirmation */
+.review-confirmation {
+  text-align: center;
+}
+
+.review-confirmation h3 {
+  color: #28a745;
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .peer-review-section {
+    margin-top: 40%;
+  }
+
+  
+  .peer-review-form {
+    padding: 0 1em;
+  }
+
+  .peer-review-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .assign-button {
+    margin-top: 0.5rem;
+  }
+}

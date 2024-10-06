@@ -1,0 +1,102 @@
+/* Career Development Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.career-development-section {
+  max-width: 1200px;
+  margin: 80% auto 0 auto; /* Adjust for the navbar's height */
+  padding: 2em;
+  min-height: calc(
+    100vh - 80px
+  ); /* Ensure it covers the full viewport minus the navbar */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.career-development-title {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1em;
+}
+
+.career-development-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2em;
+}
+
+.resource {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.resource-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1em;
+}
+
+.resource-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.resource-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1.5em;
+}
+
+.resource-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.resource-button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .career-development-section {
+    padding: 1.5em;
+    margin-top: 190%; /* Ensure it doesn't overlap with the navbar on mobile */
+  }
+
+  .career-development-title {
+    font-size: 2rem;
+  }
+
+  .career-development-description {
+    font-size: 1rem;
+  }
+
+  .resource-title {
+    font-size: 1.6rem;
+  }
+
+  .resource-image {
+    width: 100%;
+  }
+
+  .resource-description {
+    font-size: 1rem;
+  }
+
+  .resource-button {
+    font-size: 1rem;
+    padding: 0.5em 1em;
+  }
+}
