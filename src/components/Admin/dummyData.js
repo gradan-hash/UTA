@@ -1,5 +1,5 @@
 const dummyData = [
-  { username: "admin", password: "admin123" },
+  { username: "admin", password: "admin" },
   { username: "superuser", password: "superpass" }
 ];
 

@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   Outlet,
+  Navigate,
 } from "react-router-dom";
 
 // Components
@@ -22,7 +23,7 @@ import ManageConferences from "./components/Admin/dashboard/ManageConferences";
 import ManageUsers from "./components/Admin/dashboard/ManageUsers";
 import ManageReports from "./components/Admin/dashboard/ManageReports";
 import AdminLogin from "./components/Admin/Login/AdminLogin";
-
+import { useState } from "react";
 const App = () => {
   // State to manage admin login status
   const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);

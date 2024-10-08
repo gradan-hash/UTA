@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./AdminLogin.css";
 import dummyData from "../dummyData";
 
-const AdminLogin = () => {
+const AdminLogin = ({ onLogin }) => {
+  // Pass onLogin prop from parent to handle authentication state
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -17,7 +18,8 @@ const AdminLogin = () => {
     );
 
     if (admin) {
-      navigate("/admin/dashboard");
+      onLogin(); // Set authentication state to true
+      navigate("/admin"); // Redirect to the dashboard
     } else {
       setError("Invalid credentials, please try again.");
     }
