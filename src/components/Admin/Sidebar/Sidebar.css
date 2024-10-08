@@ -41,10 +41,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%;
-    gap: 10px;
-    min-height: auto;
-    padding: 1rem;
+    display: none; /* Hide the sidebar on small screens */
   }
 
   .sidebar ul {
