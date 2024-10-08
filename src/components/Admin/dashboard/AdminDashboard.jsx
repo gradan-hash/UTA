@@ -6,7 +6,9 @@ const AdminDashboard = () => {
     <div className="admin-dashboard">
       <Sidebar />
       <div className="dashboard-content">
-        <h1 className="dashboard-title">Admin Dashboard</h1>
+        <h1 className="dashboard-title">
+          <Link className="Link" to="/admin"></Link>Admin Dashboard
+        </h1>
         <div className="dashboard-cards">
           <div className="dashboard-card">
             <h3>

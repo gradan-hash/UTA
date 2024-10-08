@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AdminLogin.css";
-import dummyData from "./dummyData";
+import dummyData from "../dummyData";
 
 const AdminLogin = () => {
   const [username, setUsername] = useState("");

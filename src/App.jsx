@@ -21,8 +21,17 @@ import AdminDashboard from "./components/Admin/dashboard/AdminDashboard";
 import ManageConferences from "./components/Admin/dashboard/ManageConferences";
 import ManageUsers from "./components/Admin/dashboard/ManageUsers";
 import ManageReports from "./components/Admin/dashboard/ManageReports";
+import AdminLogin from "./components/Admin/Login/AdminLogin";
 
 const App = () => {
+  // State to manage admin login status
+  const [isAdminAuthenticated, setIsAdminAuthenticated] = useState(false);
+
+  // Admin login handler (this is simplified, replace with real auth logic)
+  const handleAdminLogin = () => {
+    setIsAdminAuthenticated(true);
+  };
+
   return (
     <Router>
       <Routes>
@@ -40,15 +49,53 @@ const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Route>
 
-        {/* Admin routes without the Navbar */}
-        <Route path="/admin" element={<AdminDashboard />} />
+        {/* Admin Login Route */}
+        <Route
+          path="/admin/adminlogin"
+          element={<AdminLogin onLogin={handleAdminLogin} />}
+        />
+
+        {/* Admin routes without the Navbar (protected) */}
+        <Route
+          path="/admin"
+          element={
+            isAdminAuthenticated ? (
+              <AdminDashboard />
+            ) : (
+              <Navigate to="/admin/adminlogin" replace />
+            )
+          }
+        />
         <Route
           path="/admin/manage-conferences"
-          element={<ManageConferences />}
+          element={
+            isAdminAuthenticated ? (
+              <ManageConferences />
+            ) : (
+              <Navigate to="/admin/adminlogin" replace />
+            )
+          }
         />
-        <Route path="/admin/manage-users" element={<ManageUsers />} />
-
-        <Route path="/admin/reports" element={<ManageReports />} />
+        <Route
+          path="/admin/manage-users"
+          element={
+            isAdminAuthenticated ? (
+              <ManageUsers />
+            ) : (
+              <Navigate to="/admin/adminlogin" replace />
+            )
+          }
+        />
+        <Route
+          path="/admin/reports"
+          element={
+            isAdminAuthenticated ? (
+              <ManageReports />
+            ) : (
+              <Navigate to="/admin/adminlogin" replace />
+            )
+          }
+        />
       </Routes>
     </Router>
   );
