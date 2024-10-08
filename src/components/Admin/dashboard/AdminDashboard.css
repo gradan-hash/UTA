@@ -1,6 +1,7 @@
 /* Admin Dashboard Container */
 .admin-dashboard {
   display: flex;
+  
   min-height: 100vh;
   background-color: #f4f6f9;
   cursor: pointer;
@@ -80,7 +81,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .admin-dashboard {
-    margin-top: 50%;
+    margin-top: 90%;
     cursor: pointer;
   }
 

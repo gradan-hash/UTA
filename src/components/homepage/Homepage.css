@@ -6,7 +6,7 @@ html {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
 }
-.homepage {
+.homepage1 {
   margin-top: 65%;
 }
 /* Hero Section */
@@ -120,8 +120,8 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .homepage {
-    margin-top: 90%;
+  .homepage1 {
+    margin-top: 320%;
   }
   .hero {
     flex-direction: column;

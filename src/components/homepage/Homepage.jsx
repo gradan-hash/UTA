@@ -5,7 +5,7 @@ import schedule from "../../assets/schedule.jpeg";
 import news from "../../assets/news.png";
 const Homepage = () => {
   return (
-    <div className="homepage">
+    <div className="homepage1">
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
