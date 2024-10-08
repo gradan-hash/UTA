@@ -91,6 +91,7 @@ p {
 /* Responsive Design */
 @media (max-width: 768px) {
   .call-for-papers {
+    margin-top: 30%;
     padding: 2em 1em;
   }
 

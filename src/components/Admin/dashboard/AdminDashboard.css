@@ -1,0 +1,104 @@
+/* Admin Dashboard Container */
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f6f9;
+  cursor: pointer;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Dashboard Cards for Quick Stats */
+.dashboard-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-card p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Dashboard Statistics */
+.dashboard-statistics {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-statistics h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.dashboard-statistics p {
+  color: #555;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-dashboard {
+    margin-top: 50%;
+    cursor: pointer;
+  }
+
+  .dashboard-title {
+    margin-left: 20%;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  .dashboard-cards {
+    flex-direction: column;
+  }
+
+  .admin-dashboard {
+    flex-direction: column;
+  }
+
+  .dashboard-content {
+    margin: 10px;
+  }
+}

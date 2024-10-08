@@ -121,7 +121,7 @@ html {
 /* Responsive Design */
 @media (max-width: 768px) {
   .homepage {
-    margin-top: 370%;
+    margin-top: 90%;
   }
   .hero {
     flex-direction: column;

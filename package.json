@@ -12,6 +12,7 @@
   "dependencies": {
     "dom": "^0.0.3",
     "react": "^18.3.1",
+    "react-csv": "^2.2.2",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
     "react-stripe-checkout": "^2.6.3",
